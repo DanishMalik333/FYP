@@ -14,10 +14,11 @@ def take_img():
             frameC = kinectC.get_last_color_frame()
             frameC = np.reshape(frameC, (1080, 1920, 4))
             outputC = cv2.resize(frameC, (0, 0), fx=0.5, fy=0.5)
+            img= outputC[0:180, 380:600]
             #cv2.imshow('KINECT Video StreamC', outputC)
-            
             #if i == 1:
-            cv2.imwrite('image.jpg',outputC)
+            
+            cv2.imwrite('image.jpg',img)
             break
             #i = i+1
             
