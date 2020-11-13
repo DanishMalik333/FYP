@@ -25,6 +25,3 @@ print(x_p, y_p, x_n, y_n)
 #ser_com('90+90+90+0')
 #time.sleep(0.5)
 #ser_com('180+90+90+0')
-
-
-
