@@ -1,7 +1,7 @@
 import time
 import serial
-ser1 = serial.Serial('COM6', 9600)
-time.sleep(5)
-ser1.write('256.1a'.encode())
-time.sleep(5)
-ser1.write('254.1'.encode())
+def ser_com(strng):
+    ser1 = serial.Serial('COM3', 9600)
+
+    ser1.write(strng.encode())
+    ser1.close()

@@ -48,13 +48,13 @@ void loop()
 
   servo1.attach(3);
   servo1.write(angle1);
-  delay(1000);
+  delay(100);
   servo2.attach(5);
   servo2.write(angle2);
-  delay(1000); 
+  delay(100); 
   servo3.attach(9);
   servo3.write(angle3);
-  delay(1000);
+  delay(100);
   servo4.attach(11);
   servo4.write(angle4);
 
